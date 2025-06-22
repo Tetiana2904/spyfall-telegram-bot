@@ -1,3 +1,4 @@
+print("🧠 ЦЕ ТОЙ tat.py!")
 import asyncio
 import json
 import os
@@ -563,3 +564,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

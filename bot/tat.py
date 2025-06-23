@@ -507,7 +507,7 @@ def extend(update: Update, context: CallbackContext):
     game_state['time_left'] += 30
     update.message.reply_text("⏱ Час продовжено на 30 секунд!")
 def main():
-    updater = Updater(TOKEN, use_context=True)
+    updater = Updater(TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start', start))
     dp.add_handler(CommandHandler('join', join))

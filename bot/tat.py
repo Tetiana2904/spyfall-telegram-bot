@@ -3,6 +3,7 @@ from telegram.constants import ParseMode
 from telegram.ext import (
     Updater, CommandHandler, CallbackQueryHandler, CallbackContext, JobQueue
 )
+import imghdr
 import threading
 import random
 

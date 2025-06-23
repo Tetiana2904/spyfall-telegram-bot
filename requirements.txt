@@ -1,3 +1,4 @@
-python-telegram-bot==13.11
+python-telegram-bot==13.15
+imghdr ; python_version < "3.12"
 emoji
 apscheduler

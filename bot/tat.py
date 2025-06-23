@@ -1,6 +1,5 @@
-from telegram import (
-    Update, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
-)
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.constants import ParseMode
 from telegram.ext import (
     Updater, CommandHandler, CallbackQueryHandler, CallbackContext, JobQueue
 )

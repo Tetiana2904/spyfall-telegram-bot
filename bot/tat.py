@@ -526,13 +526,9 @@ def main():
     dp.add_handler(CallbackQueryHandler(registration_button_callback))
     dp.add_handler(CallbackQueryHandler(vote_callback))  # повторно, якщо треба без pattern
 
-    updater.start_webhook(
-    listen="0.0.0.0",
-    port=int(os.environ.get('PORT', 8443)),
-    url_path=TOKEN,
-    webhook_url="https://spyfall-telegram-bot-2.onrender.com/8160868856:AAG8XUDYboPUKuYL5V1-gah56LmRBZobYo4"
-    )
+    updater.start_polling()
     updater.idle()
 
 if __name__ == '__main__':
     main()
+   
